@@ -17793,7 +17793,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This second model has a $R^2 = 0.99$ for the training data and $R^2 = 0.20$ for the testing data; it has a <strong>small bias</strong> and <strong>large variance</strong>.</p>
+<p>This second model has a $R^2 = 0.99$ for the training data and $R^2 = 0.20$ for the testing data; it has a <strong>small bias</strong> and <strong>large variance</strong>. It can be seen that it has been <em>overfitted to the training data</em> - it is capable of making accurate predictions for the training data, but when given new data it is not able to make correct predictions.</p>
 <p>Comparing the RMSE values of the previous model  ($\text{RMSE} = 0.159$) and this one ($\text{RMSE} = 0.199$), it can be seen that the error has increased, meaning that this model is less appropiate for predicting the price.</p>
 
 </div>
@@ -18053,7 +18053,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This third model is similar to the previous model, as it uses decision trees to make the predictions. However, it has a $R^2 = 0.93$ for the training data and $R^2 = 0.57$ for the testing data. It has improved significantly its accuracy when predicting the testing data, both when compared with the <code>LinearRegression</code> model and <code>DecisionTreeRegressor</code> model.</p>
+<p>This third model is similar to the previous model, as it uses decision trees to make the predictions. However, it has a $R^2 = 0.93$ for the training data and $R^2 = 0.57$ for the testing data. This model is also overfitted to the training data. However, it has the best performance so far. It has improved significantly its accuracy when predicting the testing data, both when compared with the <code>LinearRegression</code> model and <code>DecisionTreeRegressor</code> model.</p>
 
 </div>
 </div>
@@ -18316,7 +18316,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The next model used has given good results as well (when compared to the the <code>LinearRegression</code> model and <code>DecisionTreeRegressor</code> model). However, it has a lower variance than the <code>RandomForestRegressor</code>: it has a $R^2 = 0.55$ for the training data and $R^2 = 0.54$ for the testing data.</p>
+<p>This model has a lower $R^2$ training score than the <code>RandomForestRegressor</code>: it has a $R^2 = 0.55$ for the training data and $R^2 = 0.54$ for the testing data. It can be seen here that the model was not overfitted and, even if it was not able to learn everything from the training data, it is capable of making correct predictions with a small error.</p>
 
 </div>
 </div>
@@ -18579,7 +18579,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The next model used has given good results as well (when compared to the the <code>LinearRegression</code> model and <code>DecisionTreeRegressor</code> model). However, it has a lower variance than the <code>RandomForestRegressor</code>: it has a $R^2 = 0.55$ for the training data and $R^2 = 0.54$ for the testing data.</p>
+<p>This model has a $R^2 = 0.59$ for the training data and $R^2 = 0.38$ for the testing data. It has increased the errors made in the predictions, so this model is worse than the rest that we have seen.</p>
 
 </div>
 </div>
